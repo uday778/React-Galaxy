@@ -12,16 +12,23 @@ function App() {
 
 
 const addvalue=()=>{
+
+  setcount((prevcount)=>prevcount+1)
+  setcount((prevcount)=>prevcount+1)
+  setcount((prevcount)=>prevcount+1)
   
-  counter=counter+1
-  setcount(counter)
-  console.log("clicked addvakue",counter);
+  // counter=counter+1
+  // setcount(counter)
+  // console.log("clicked addvakue",counter);
 }
 const removevalue=()=>{
+  setcount((prevcount)=>prevcount-1)
+  setcount((prevcount)=>prevcount-1)
+  setcount((prevcount)=>prevcount-1)
 
-  counter=counter-1
-  setcount(counter)
-    console.log("removed",counter);
+  // counter=counter-1
+  // setcount(counter)
+  //   console.log("removed",counter);
 }
 
   return (
@@ -31,7 +38,7 @@ const removevalue=()=>{
       <button onClick={addvalue}>Add Value {counter} </button>
       <br/>
       <button onClick={removevalue}>Remove Value value {counter}</button>
-      <div>footer :  {counter} </div>
+    
     </>
   )
 }
